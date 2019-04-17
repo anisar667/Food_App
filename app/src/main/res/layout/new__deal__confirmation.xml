@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faum.faum_expert.New_Deal_Confirmation"
+    android:orientation="vertical"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDealName"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:text="Deal Name"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginBottom="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" />
+
+            <TextView
+                android:id="@+id/tvNewDealCategory"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="New Deal Category"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                android:layout_marginTop="84dp"
+                android:layout_marginStart="-380dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="42dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" />
+
+            <TextView
+                android:id="@+id/tvDealConfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Do you want to set this deal active for the users?"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                android:layout_marginStart="-380dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="244dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxConfirmation"
+                android:layout_width="99dp"
+                android:layout_height="53dp"
+                android:text="Active"
+                android:theme="@style/checkBoxTheme"
+                android:layout_marginTop="360dp"
+                android:layout_marginStart="-230dp"
+                android:layout_marginLeft="1dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

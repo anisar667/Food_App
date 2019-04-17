@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faum.faum_user.Recent_Order_Data"
+    android:orientation="vertical"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Deal Data"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.MyTitleText"
+                android:gravity="center"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOrderDealName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_marginTop="39dp"
+            android:layout_marginBottom="35dp" />
+
+        <TextView
+            android:id="@+id/tvOrderDealCat"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp" />
+
+        <TextView
+            android:id="@+id/tvOrderDealPrice"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="78dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <TextView
+            android:id="@+id/tvOrderDealQty"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="-49dp"
+            android:layout_marginBottom="165dp"
+
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp" />
+
+        <Button
+            android:id="@+id/btnBooKRider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Rider"
+            android:textColor="@drawable/buttontext"
+            android:background="@drawable/hover"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="-110dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="1dp" />
+
+    </LinearLayout>
+</LinearLayout>

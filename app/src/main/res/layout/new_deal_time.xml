@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context="com.faum.faum_expert.New_Deal_Time"
+    android:background="@color/mediumpurple">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvNewDealContinueTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deal Schedule"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:theme="@style/ThemeOverlay.MyTitleText" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+            <EditText
+                android:id="@+id/etEstimatedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_light_disabled"
+                android:hint="Estimated Time e.g 120 mins"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:inputType="number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDealTime"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="21dp"
+                android:text="Deal Timing"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox8to10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="8-10"
+                android:theme="@style/checkBoxTheme" />
+
+            <CheckBox
+                android:id="@+id/checkbox12to2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-30dp"
+                android:text="12-2"
+                android:theme="@style/checkBoxTheme" />
+            <CheckBox
+                android:id="@+id/checkBox6to8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="7dp"
+                android:text="6-8"
+                android:theme="@style/checkBoxTheme" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox9to11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-30dp"
+                android:text="9-11"
+                android:theme="@style/checkBoxTheme" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+
+            <TextView
+                android:id="@+id/tvDealDays"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="Deal Days"
+                android:textSize="20dp"
+                android:layout_marginBottom="38dp"
+               />
+
+            <CheckBox
+                android:id="@+id/checkBoxMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:theme="@style/checkBoxTheme"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-30dp"
+               />
+
+            <CheckBox
+                android:id="@+id/checkBoxTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:theme="@style/checkBoxTheme"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-30dp"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBoxWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:theme="@style/checkBoxTheme"
+                android:layout_marginBottom="76dp"
+
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="7dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBoxThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:theme="@style/checkBoxTheme"
+
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-110dp" />
+            <CheckBox
+                android:id="@+id/checkBoxFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:theme="@style/checkBoxTheme"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="7dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+
+            <EditText
+                android:id="@+id/etNewDealPrice"
+                android:layout_width="166dp"
+                android:layout_height="47dp"
+                android:hint="Price per meal"
+                android:gravity="center"
+
+                android:background="@color/common_google_signin_btn_text_light_disabled"
+
+                android:layout_marginLeft="7dp"
+                android:inputType="numberDecimal"
+               />
+            <EditText
+                android:id="@+id/etNewDealSize"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="-45dp"
+                android:gravity="center"
+                android:background="@color/common_google_signin_btn_text_light_disabled"
+
+                android:inputType="numberDecimal"
+                android:hint="Person size e.g  5"
+
+               />
+
+            <Button
+                android:id="@+id/btnNewDealConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:text="Confirm"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:background="@color/common_google_signin_btn_text_light_disabled"
+                 />
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

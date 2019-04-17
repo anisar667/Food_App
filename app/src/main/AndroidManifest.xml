@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.faum.faum_expert">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+    -
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.faum.faum_expert.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths"></meta-data>
+    </provider>
+    -->
+    <!-- <provider android:name="android.support.v4.content.FileProvider" android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true"> <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/> </provider> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User_Select_SignIn" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Social_Connect" />
+        <activity android:name=".User_sign" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Personal_Information" />
+        <activity android:name=".Contact_Infrormation" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Kitchen_Snaps" />
+        <activity
+            android:name=".Navigation_Drawer"
+            android:label="@string/title_activity_navigation__drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".New_Deal" />
+        <activity android:name=".New_Deal_Time" />
+        <activity android:name=".New_Deal_List" />
+        <activity android:name=".New_Deal_Confirmation" />
+        <activity android:name=".Recent_Order_List" />
+        <activity android:name=".Recent_Order_Data" />
+        <activity android:name="com.faum.faum_user.Main2Activity" />
+        <activity android:name="com.faum.faum_user.Social_Connect" />
+        <activity android:name="com.faum.faum_user.User_sign" />
+        <activity android:name="com.faum.faum_user.Personal_Information" />
+        <activity android:name="com.faum.faum_user.Contact_Infrormation" />
+        <activity
+            android:name="com.faum.faum_user.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name="com.faum.faum_user.New_Deal_List" />
+        <activity android:name="com.faum.faum_user.Deal_Detail_one" />
+        <activity android:name="com.faum.faum_user.Deal_Detail_two" />
+        <activity android:name="com.faum.faum_user.Deal_Detail_three" />
+        <activity
+            android:name="com.faum.faum_user.MapsActivityForCooker"
+            android:label="@string/title_activity_maps_for_cooker" />
+        <activity
+            android:name="com.faum.faum_user.Navigation_Drawer_User"
+            android:label="@string/title_activity_navigation__drawer__user"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.faum.faum_user.Deal_Invoice" />
+        <activity android:name="com.faum.faum_user.Recent_Order_List" />
+        <activity android:name="com.faum.faum_user.Recent_Order_Data" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FireBaseMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.faum.faum_rider.Main3Activity" />
+        <activity android:name="com.faum.faum_rider.Social_Connect" />
+        <activity android:name="com.faum.faum_rider.User_sign" />
+        <activity android:name="com.faum.faum_rider.Personal_Information" />
+        <activity android:name="com.faum.faum_rider.Contact_Infrormation" />
+        <activity
+            android:name="com.faum.faum_rider.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".RidersIDS" />
+        <activity android:name="com.faum.faum_rider.Rider_isActive" />
+        <activity
+            android:name="com.faum.faum_rider.Navigation_Drawer_Rider"
+            android:label="@string/title_activity_navigation__drawer__rider"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.faum.faum_rider.user_chef_info" />
+        <activity
+            android:name="com.faum.faum_rider.chefAndUserLocation"
+            android:label="@string/title_activity_chef_and_user_location" />
+        <activity android:name=".notify" />
+        <activity android:name="com.faum.faum_rider.forUserInfo" />
+        <activity
+            android:name="com.faum.faum_rider.Rider_User_Location"
+            android:label="@string/title_activity_rider__user__location" />
+        <activity android:name="com.faum.faum_user.notification" />
+        <activity android:name=".notifyToRider" />
+        <activity android:name=".recentOrderList2" />
+        <activity android:name="com.faum.faum_rider.notifytochef"></activity>
+        <activity android:name="com.faum.faum_rider.notifyToUser"></activity>
+    </application>
+
+</manifest>

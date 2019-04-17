@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1053273951982",
+    "firebase_url": "https://food-app-647d8.firebaseio.com",
+    "project_id": "food-app-647d8",
+    "storage_bucket": "food-app-647d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053273951982:android:0beffc7f3c598106",
+        "android_client_info": {
+          "package_name": "com.faum.faum_expert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053273951982-29p6mr6kfefululsfcs7qnc0s3hc2ri8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.faum.faum_expert",
+            "certificate_hash": "9d7666b0883658cbd7cfcd8d894af4358a1f7d13"
+          }
+        },
+        {
+          "client_id": "1053273951982-hn7locn30vn24k3n13nfpr5qvdgvfejt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfkGEbKj1jkczs_wwWJ8xlxurE_QmF-zM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053273951982-hn7locn30vn24k3n13nfpr5qvdgvfejt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

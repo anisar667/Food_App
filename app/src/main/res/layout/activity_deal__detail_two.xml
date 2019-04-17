@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faum.faum_user.Deal_Detail_two"
+    android:orientation="vertical"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDTTitle"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="More Info"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.MyTitleText"
+                android:layout_marginTop="2dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDTEstimatedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Approximate Time Before Order"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_marginTop="30dp"
+                />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp"
+            android:weightSum="1.0">
+            <TextView
+                android:id="@+id/tvDDTEstimatedValue"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Approximate Time Before Order" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDTSizeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Maximum Person Meal Size"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDTSizeValue"
+                android:layout_width="match_parent"
+                android:text="Max Meal Size"
+                android:gravity="center"
+                android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDTPriceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Price Per Meal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDTPriceValue"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Price per meal"
+                android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnDealDetailTwo"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:textColor="@drawable/buttontext"
+                android:background="@drawable/hover"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

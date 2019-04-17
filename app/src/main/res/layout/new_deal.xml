@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faum.faum_expert.New_Deal"
+    android:orientation="vertical"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:background="@color/mediumpurple"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+            <EditText
+                android:id="@+id/etDealName"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Deal Name"
+                android:background="@drawable/round"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"
+                android:layout_marginTop="115dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etNewDealCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Category"
+            android:background="@drawable/round"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="78dp"
+            />
+        <EditText
+            android:id="@+id/etDishName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Dish Name"
+            android:background="@drawable/round"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="-42dp"
+            android:layout_marginBottom="-148dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etDealDescription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Deal Description"
+            android:background="@drawable/round"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginBottom="-148dp"/>
+
+        <TextView
+            android:id="@+id/tvNewDealTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Make a Deal"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:theme="@style/ThemeOverlay.MyTitleText"
+            android:layout_marginTop="-242dp"
+            android:layout_marginBottom="43dp" />
+
+        <Button
+            android:id="@+id/btnNewDealConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="370dp"
+            android:background="@drawable/hover"
+            android:text="Confirm"
+            android:textColor="@drawable/buttontext" />
+
+    </LinearLayout>
+</LinearLayout>

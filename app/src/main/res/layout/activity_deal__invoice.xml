@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faum.faum_user.Deal_Invoice"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:text="Invoice"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.MyTitleText"/>
+        </LinearLayout>
+
+        <!--<Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:visibility="visible" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1.0">
+
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the number of qty."
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/btnCoOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hover"
+                android:text="Confirm Order"
+                android:textColor="@drawable/buttontext"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Total price"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:weightSum="1.0">
+
+            <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send text to chef"
+                android:textColor="@drawable/buttontext"
+            android:background="@drawable/hover"
+            android:visibility="visible" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1.0">
+            <Button
+                android:id="@+id/btnText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Menu"
+                android:textColor="@drawable/buttontext"
+                android:background="@drawable/hover"
+                android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

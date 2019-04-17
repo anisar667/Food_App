@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context="com.faum.faum_expert.New_Deal_List"
+    android:background="@color/mediumpurple">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDealList"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginEnd="1dp"
+                android:theme="@style/ThemeOverlay.MyTitleText"
+                android:layout_marginStart="1dp"
+                android:background="@color/indigo"
+                android:gravity="center"
+                android:text="All Deals"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lvDealList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/indigo"
+            android:dividerHeight="1dp"
+            android:background="@color/mediumpurple"/>
+    </LinearLayout>
+</LinearLayout>

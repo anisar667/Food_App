@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faum.faum_user.Deal_Detail_one"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.0"
+        android:background="@color/mediumpurple"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDealDetailTile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Deal Detail"
+                android:background="@color/indigo"
+                android:theme="@style/ThemeOverlay.MyTitleText" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDOTileCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deal Category"
+                android:gravity="center"
+                android:textColor="@color/indigo"
+                android:textColorHighlight="#F7F9F9"
+                android:shadowColor="#D35400"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDCategoryvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="category"
+                android:shadowColor="#D35400" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDOTileDealDescton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Description"
+                android:textColor="@color/indigo"
+                android:textColorHighlight="#F7F9F9"
+                android:shadowColor="#D35400"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDDishDescvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDOTileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deal Name"
+                android:textColor="@color/indigo"
+                android:textColorHighlight="@color/indigo"
+                android:shadowColor="#D35400"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDNamevalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Deal Name" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDOTileDishName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Name"
+                android:textColor="@color/indigo"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvDDDishNamevalue"
+                android:layout_width="match_parent"
+                android:text="Dish Name"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/btnDealDetailOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deal Price"
+                android:background="@color/common_google_signin_btn_text_light_disabled"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

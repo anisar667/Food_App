@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7d4627</color>
+    <color name="colorPrimaryDark">#edd9c0</color>
+    <color name="colorAccent">#ed8f4f</color>
+
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+    <color name="background">#f5d6d6</color>
+    <color name="mediumpurple">#9370DB</color>
+    <color name="indigo">#4B0082</color>
+    <color name="white">#ffffff</color>
+    <color name="whites">#ffffff</color>
+    <color name="orange">#FF4500</color>
+</resources>

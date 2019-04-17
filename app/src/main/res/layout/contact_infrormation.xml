@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.faum.faum_expert.Contact_Infrormation">
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.0"
+
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:layout_marginTop="40dp"
+                android:text="Personal Information"
+                android:gravity="center"
+                android:theme="@style/ThemeOverlay.MyTitleText" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:weightSum="0">
+
+
+        </LinearLayout>-->
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_labelColor="@color/colorPrimary"
+            app:mtf_image="@drawable/ic_person_black_24dp"
+            tools:layout_editor_absoluteY = "0dp"
+            tools:layout_editor_absoluteX = "0dp">
+            <EditText
+                android:id="@+id/etLandline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"/>
+
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_image="@drawable/ic_stay_current_portrait_black_24dp"
+            app:mtf_labelColor="@color/colorPrimary"
+            tools:layout_editor_absoluteY = "0dp"
+            tools:layout_editor_absoluteX = "0dp">
+
+            <EditText
+                android:id="@+id/etCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round"
+                android:hint="Cell Number"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:weightSum="1.0">
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mtf_labelColor="@color/colorPrimary"
+                app:mtf_image="@drawable/ic_home_black_24dp">
+
+            <EditText
+                android:id="@+id/etAddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Resedential Address"
+                android:background="@drawable/round"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPostalAddress"/>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="@drawable/buttontext"
+                android:background="@drawable/hover"
+                android:layout_marginTop="50dp"
+                android:text="Confirm"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
